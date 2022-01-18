@@ -28,6 +28,15 @@
       flex: 1;
     }
 
+    .authorName {
+      color: white
+    }
+
+    .authorName:hover {
+      color: #00FFF8;
+      cursor: pointer;
+    }
+
     .attribution {
       font-size: 11px;
       text-align: center;
@@ -44,6 +53,10 @@
       border-radius: 10px;
     }
 
+    .mainImage:hover {
+      background-color: #00FFF8;
+    }
+
     .container {
       background-color: #18273D;
       height: 420px;
@@ -54,6 +67,11 @@
       border-radius: 20px;
       box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 
+    }
+
+    .mainHeading:hover {
+      color: #00FFF8;
+      cursor: pointer;
     }
 
     .mainHeading {
@@ -98,13 +116,14 @@
       align-items: center;
     }
 
+    .iconImage {
+      position: absolute;
+      display: none;
+      left: 48vw;
+      top: 18vh;
+    }
+
     @media (max-width:700px) {
-
-
-
-
-
-
       .mainImage {
         height: 50vh;
         width: 100%;
@@ -145,32 +164,19 @@
         margin-top: -10px;
       }
 
-      .imgSpan {
-        align-content: center;
-        align-items: center;
-        display: flex
-      }
-
-      .break {
-        height: 1px;
-        background: rgba(173, 171, 171, 0.5);
-        margin-top: 5px;
-        margin-bottom: 5px;
-        border-radius: 10px;
-      }
-
-      .creationFooter {
-        display: flex;
-        align-content: center;
-        align-items: center;
-      }
+   
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <img src="images/image-equilibrium.jpg" class="mainImage" />
+    <div>
+
+      <img src="images/image-equilibrium.jpg" class="mainImage" />
+      <img src="images/icon-view.svg" class="iconImage" />
+    </div>
+
     <p class="mainHeading">
       Equilibrium #3429
     </p>
@@ -201,7 +207,7 @@
       <span class="creationFooter" style="color:grey;margin-top: 10px;">
         <img src="images/image-avatar.png"
           style="height:25px;border:solid white 1px;border-radius: 20px;margin-right:10px" />
-        Creation of &nbsp;<span style="color:white">
+        Creation of &nbsp;<span class="authorName">
 
           Jules Wyvern
         </span>
@@ -215,5 +221,8 @@
     Coded by <a href="https://github.com/alihaider589">alihaider589</a>.
   </div>
 </body>
+<script>
+
+</script>
 
 </html>
