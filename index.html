@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      background-color: #0F1A2C;
+      justify-content: center;
+      display: flex;
+      font-family: 'Dongle', sans-serif;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      height: 100%;
+      flex: 1;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .mainImage {
+      height: 250px;
+      width: 250px;
+      border-radius: 10px;
+    }
+
+    .container {
+      background-color: #18273D;
+      height: 420px;
+      align-self: center;
+      /* position: absolute; */
+      width: 250px;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+
+    }
+
+    .mainHeading {
+      color: white;
+      margin-top: 0px;
+      font-size: 30px;
+    }
+
+    .descriptionText {
+      font-size: 20px;
+      color: grey;
+      font-weight: lighter;
+      margin-top: -30px;
+      line-height: 17.5px;
+
+    }
+
+    .footerHeading {
+      display: flex;
+      justify-content: space-between;
+      font-size: 20px;
+      margin-top: -10px;
+    }
+
+    .imgSpan {
+      align-content: center;
+      align-items: center;
+      display: flex
+    }
+
+    .break {
+      height: 1px;
+      background: rgba(173, 171, 171, 0.5);
+      margin-top: 5px;
+      margin-bottom: 5px;
+      border-radius: 10px;
+    }
+
+    .creationFooter {
+      display: flex;
+      align-content: center;
+      align-items: center;
+    }
+
+    @media (max-width:700px) {
+
+
+
+
+
+
+      .mainImage {
+        height: 50vh;
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .container {
+        background-color: #18273D;
+        height: 75vh;
+        align-self: center;
+        /* position: absolute; */
+        width: 85%;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+
+      }
+
+      .mainHeading {
+        color: white;
+        margin-top: 0px;
+        font-size: 40px;
+      }
+
+      .descriptionText {
+        font-size: 25px;
+        color: grey;
+        font-weight: lighter;
+        margin-top: -30px;
+        line-height: 17.5px;
+
+      }
+
+      .footerHeading {
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        margin-top: -10px;
+      }
+
+      .imgSpan {
+        align-content: center;
+        align-items: center;
+        display: flex
+      }
+
+      .break {
+        height: 1px;
+        background: rgba(173, 171, 171, 0.5);
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+      }
+
+      .creationFooter {
+        display: flex;
+        align-content: center;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="images/image-equilibrium.jpg" class="mainImage" />
+    <p class="mainHeading">
+      Equilibrium #3429
+    </p>
+    <p class="descriptionText">
+      Our Equilibrium collection promotes balance and calm.
+    </p>
+    <div class="footerHeading">
+      <div>
+        <span class="imgSpan" style="color:#00FFF8">
+          <img src="images/icon-ethereum.svg" style="margin-right: 5px;height: 15px;margin-top:-3px" />
+          0.041 ETH
+        </span>
+
+      </div>
+      <div>
+        <span class="imgSpan" style="color:grey">
+          <img src="images/icon-clock.svg" style="margin-right:5px;height:15px;margin-top:-3px" />
+
+          3 days left
+
+        </span>
+      </div>
+    </div>
+    <div class="break"></div>
+
+
+    <div>
+      <span class="creationFooter" style="color:grey;margin-top: 10px;">
+        <img src="images/image-avatar.png"
+          style="height:25px;border:solid white 1px;border-radius: 20px;margin-right:10px" />
+        Creation of &nbsp;<span style="color:white">
+
+          Jules Wyvern
+        </span>
+      </span>
+    </div>
+  </div>
+
+  <div class="attribution">
+
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/alihaider589">alihaider589</a>.
+  </div>
+</body>
+
+</html>
